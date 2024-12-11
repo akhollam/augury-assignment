@@ -1,0 +1,48 @@
+{
+	"_id": "6728144fb3b5c98d48b2d5da",
+	"userId": "",
+	"machineId": "5f54dd217546020001758b7b",
+	"components": [
+		{
+			"_id": "5f54dd217546020001758b7c",
+			"type": "motor",
+			"bearings": [
+				{
+					"samples": [
+						"sample_url"
+					],
+					"endpointInfo": {
+						"type": "",
+						"installationPlane": 0,
+						"versions": {
+							"hwVersion": "",
+							"swVersion": ""
+						}
+					}
+				},
+				{
+					"samples": [
+						"sample_url"
+					],
+					"endpointInfo": {
+						"type": "",
+						"installationPlane": 0,
+						"versions": {
+							"hwVersion": "",
+							"swVersion": ""
+						}
+					}
+				}
+			]
+		}
+	],
+	"created_at": 1730678400000,
+	"updated_at": 1730702268000,
+	"continuous": true,
+	"status": "approved",
+	"status_updated_at": 1730702268,
+	"enableInterim": false,
+	"tags": [
+		"topShelf"
+	]
+}

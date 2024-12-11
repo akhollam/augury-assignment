@@ -1,0 +1,57 @@
+1. Prerequisites
+	Java: Ensure JDK 17 or higher is installed.
+	Maven: Ensure Apache Maven 3 is installed.
+	RabbitMQ: RabbitMQ server should be running locally or on a specified host.
+
+2. Configure the Application
+
+Edit the application.properties file to configure RabbitMQ or other settings.
+
+Example Configuration:
+
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+spring.websocket.allowed-origins=http://localhost:3000
+server.port=8080
+
+3. Start the RabbitMQ Server
+Ensure RabbitMQ is running locally. 
+You can check this using the RabbitMQ management console:
+URL: http://localhost:15672
+Default Credentials:
+Username: guest
+Password: guest
+
+4. Build and Run the Application
+
+Build
+
+mvn clean install
+
+Run
+
+mvn spring-boot:run
+
+5. Logs and Debugging
+Logs are available in the console.
+For RabbitMQ messages, check the RabbitMQ management console under "Queues" and "Exchanges."
+
+6. Test the Application
+
+API Endpoints:
+
+POST /machine-conf/{machineId}
+POST /machine-feeds/repairs/{machineId}
+POST /machine-feeds/session/{machineId}
+GET /machine-conf
+GET /machine-feeds/{machineId}
+
+WebSocket:
+WebSocket URL: ws://localhost:8080/ws
+Subscribe to topics like /topic/feed/{machineId}
+
+UI - 
+
+http://localhost:8080/index.html
